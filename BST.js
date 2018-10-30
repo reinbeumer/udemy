@@ -58,6 +58,7 @@ BST.prototype.depthFirstTraversal = function (itteratorFunct, order) {
   }
 }
 
+
 BST.prototype.brethFirstTraversal = function (itteratorFunct) {
   var queue = [this];
   while (queue.length) {
