@@ -96,4 +96,4 @@ function log2(node) {
   console.log(node.value);
 }
 
-bst.brethFirstTraversal(log2);
+bst.brethFirstTraversal(log);
