@@ -4,7 +4,7 @@ function BST(value) {
   this.right = null;
 }
 
-BST.prototype.insert = function (value) {
+BST.prototype.insert = function(value) {
   if (value <= this.value) {
     if (!this.left) {
       this.left = new BST(value);
@@ -20,7 +20,7 @@ BST.prototype.insert = function (value) {
   }
 };
 
-BST.prototype.contains = function (value) {
+BST.prototype.contains = function(value) {
   if (value === this.value) {
     return true;
   } else {
@@ -40,26 +40,25 @@ BST.prototype.contains = function (value) {
   }
 };
 
-BST.prototype.depthFirstTraversal = function (itteratorFunct, order) {
-  if (order === 'pre-order') {
+BST.prototype.depthFirstTraversal = function(itteratorFunct, order) {
+  if (order === "pre-order") {
     itteratorFunct(this.value);
   }
   if (this.left) {
     this.left.depthFirstTraversal(itteratorFunct, order);
   }
-  if (order !== 'post-order') {
+  if (order !== "post-order") {
     itteratorFunct(this.value);
   }
   if (this.right) {
     this.right.depthFirstTraversal(itteratorFunct, order);
   }
-  if (order === 'post-order') {
+  if (order === "post-order") {
     itteratorFunct(this.value);
   }
-}
+};
 
-
-BST.prototype.brethFirstTraversal = function (itteratorFunct) {
+BST.prototype.brethFirstTraversal = function(itteratorFunct) {
   var queue = [this];
   while (queue.length) {
     var treeNode = queue.shift();
@@ -71,7 +70,7 @@ BST.prototype.brethFirstTraversal = function (itteratorFunct) {
       queue.push(treeNode.right);
     }
   }
-}
+};
 
 var bst = new BST(50);
 bst.insert(30);
@@ -96,4 +95,4 @@ function log2(node) {
   console.log(node.value);
 }
 
-bst.brethFirstTraversal(log);
+bst.brethFirstTraversal(log2);
