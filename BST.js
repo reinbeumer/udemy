@@ -72,19 +72,19 @@ BST.prototype.brethFirstTraversal = function(itteratorFunct) {
   }
 };
 
-BST.prototype.getMinVal = function() {
+BST.prototype.getMinVal = function(itteratorFunct) {
   if (this.left) {
-    this.left.getMinVal();
+    return this.left.getMinVal(itteratorFunct);
   } else {
-    console.log(this.value);
+    return this.value;
   }
 };
 
 BST.prototype.getMaxVal = function() {
   if (this.right) {
-    this.right.getMaxVal();
+    return this.right.getMaxVal();
   } else {
-    console.log(this.value);
+    return this.value;
   }
 };
 
@@ -113,4 +113,5 @@ function log2(node) {
 
 // bst.brethFirstTraversal(log2);
 // bst.getMinVal();
-bst.getMaxVal();
+console.log("MIN: " + bst.getMinVal());
+console.log("MAX: " + bst.getMaxVal());
