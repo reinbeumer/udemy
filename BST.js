@@ -115,3 +115,14 @@ function log2(node) {
 // bst.getMinVal();
 console.log("MIN: " + bst.getMinVal());
 console.log("MAX: " + bst.getMaxVal());
+
+function factorial(num) {
+  if (num === 1) {
+    return num;
+  } else {
+    return num * factorial(num - 1);
+  }
+}
+for (i = 100; i > 0; i--) {
+  console.log(i + " => " + factorial(i));
+}
