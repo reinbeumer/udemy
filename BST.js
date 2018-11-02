@@ -4,7 +4,7 @@ function BST(value) {
   this.right = null;
 }
 
-BST.prototype.insert = function(value) {
+BST.prototype.insert = function (value) {
   if (value <= this.value) {
     if (!this.left) {
       this.left = new BST(value);
@@ -20,7 +20,7 @@ BST.prototype.insert = function(value) {
   }
 };
 
-BST.prototype.contains = function(value) {
+BST.prototype.contains = function (value) {
   if (value === this.value) {
     return true;
   } else {
@@ -40,7 +40,7 @@ BST.prototype.contains = function(value) {
   }
 };
 
-BST.prototype.depthFirstTraversal = function(itteratorFunct, order) {
+BST.prototype.depthFirstTraversal = function (itteratorFunct, order) {
   if (order === "pre-order") {
     itteratorFunct(this.value);
   }
@@ -58,7 +58,7 @@ BST.prototype.depthFirstTraversal = function(itteratorFunct, order) {
   }
 };
 
-BST.prototype.brethFirstTraversal = function(itteratorFunct) {
+BST.prototype.brethFirstTraversal = function (itteratorFunct) {
   var queue = [this];
   while (queue.length) {
     var treeNode = queue.shift();
@@ -72,7 +72,7 @@ BST.prototype.brethFirstTraversal = function(itteratorFunct) {
   }
 };
 
-BST.prototype.getMinVal = function(itteratorFunct) {
+BST.prototype.getMinVal = function (itteratorFunct) {
   if (this.left) {
     return this.left.getMinVal(itteratorFunct);
   } else {
@@ -80,7 +80,7 @@ BST.prototype.getMinVal = function(itteratorFunct) {
   }
 };
 
-BST.prototype.getMaxVal = function() {
+BST.prototype.getMaxVal = function () {
   if (this.right) {
     return this.right.getMaxVal();
   } else {

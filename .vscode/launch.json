@@ -6,6 +6,12 @@
     "configurations": [{
             "type": "node",
             "request": "launch",
+            "name": "HAshTable",
+            "program": "${workspaceFolder}/HashTable.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "BST",
             "program": "${workspaceFolder}/BST.js"
         },
