@@ -108,13 +108,12 @@ function log(value) {
 	console.log(value);
 }
 
-// eslint-disable-next-line no-unused-vars
 function log2(node) {
 	console.log(node.value);
 }
 
-// bst.brethFirstTraversal(log2);
-// bst.getMinVal();
+bst.brethFirstTraversal(log2);
+bst.getMinVal();
 console.log('MIN: ' + bst.getMinVal());
 console.log('MAX: ' + bst.getMaxVal());
 
