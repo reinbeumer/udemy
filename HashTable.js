@@ -22,6 +22,8 @@ HashTabel.prototype.insert = function (key, value) {
     var index = this.hash(key);
     if (!this.buckets[index]) {
         this.buckets[index] = new HashNode(key, value);
+    } else if (this.buckets[index].key === key) {
+        this.buckets[index].value = value;
     } else {
         var currentNode = this.buckets[index];
         while (currentNode.next) {
@@ -39,5 +41,8 @@ var myHT = new HashTabel(30);
 myHT.insert('Dean', 'deam@gmail.com');
 myHT.insert('Megan', 'megan@gmail.com');
 myHT.insert('Dane', 'dane@gmail.com')
+myHT.insert('Dean', 'deanmachinn@gmail.com');
+myHT.insert('Megan', 'megansmith@gmail.com');
+myHT.insert('Dane', 'dane1010@outlook.com')
 console.log(myHT.buckets);
 console.log();
