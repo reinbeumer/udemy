@@ -53,16 +53,31 @@ HashTabel.prototype.get = function (key) {
 	}
 };
 
-var myHT = new HashTabel(30);
+HashTabel.prototype.retrieveAll = function () {
+	var retVal = [];
+	for (var i = 0; i < this.numBusckets; i++) {
+		var currentNode = this.buckets[i];
+		while (currentNode) {
+			retVal.push(currentNode);
+			currentNode = currentNode.next;
+		}
+	}
+	return retVal;
+};
+
+var myHT = new HashTabel(1);
 myHT.insert('Dean', 'deam@gmail.com');
 myHT.insert('Megan', 'megan@gmail.com');
 myHT.insert('Dane', 'dane@gmail.com');
 myHT.insert('Dean', 'deanmachinn@gmail.com');
 myHT.insert('Megan', 'megansmith@gmail.com');
 myHT.insert('Dane', 'dane1010@outlook.com');
+// myHT.insert('Dena', 'dena@outlook.com');
+myHT.insert('Joe', 'joey@facebook.com');
+myHT.insert('Samantha', 'sammy@twitter.com');
 
-console.log(myHT.get('Dean'));
+console.log(myHT.retrieveAll());
 
 
-console.log(myHT.buckets);
+// console.log(myHT.buckets);
 console.log();
