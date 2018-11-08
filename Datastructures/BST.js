@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 function BST(value) {
 	this.value = value;
 	this.left = null;

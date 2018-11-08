@@ -7,19 +7,25 @@
             "type": "node",
             "request": "launch",
             "name": "HAshTable",
-            "program": "${workspaceFolder}/HashTable.js"
+            "program": "${workspaceFolder}/Datastructures/HashTable.js"
         },
         {
             "type": "node",
             "request": "launch",
             "name": "BST",
-            "program": "${workspaceFolder}/BST.js"
+            "program": "${workspaceFolder}/Datastructures/BST.js"
         },
         {
             "type": "node",
             "request": "launch",
             "name": "LinkedList",
-            "program": "${workspaceFolder}/indexOfLinkedList.js"
+            "program": "${workspaceFolder}/Datastructures/indexOfLinkedList.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "FizzBuzz",
+            "program": "${workspaceFolder}/Algorithms/FizzBuzz.js"
         }
     ]
 }

@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 function HashTabel(size) {
 	this.buckets = Array(size);
 	this.numBusckets = this.buckets.length;

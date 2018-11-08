@@ -1,4 +1,9 @@
 {
     "editor.fontLigatures": true,
     "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+    "git.ignoreLimitWarning": true,
+    "editor.insertSpaces": false,
+    "prettier.useTabs": true,
+    "prettier.tabWidth": 4,
+    "prettier.singleQuote": true,
 }
