@@ -44,14 +44,26 @@ BST.prototype.depthFirstTraversal = function (itteratorFunct, order) {
 	if (order === 'pre-order') {
 		itteratorFunct(this.value);
 	}
-	if (this.left) {
-		this.left.depthFirstTraversal(itteratorFunct, order);
+	if (order === 'rev-order') {
+		if (this.right) {
+			this.right.depthFirstTraversal(itteratorFunct, order);
+		}
+	} else {
+		if (this.left) {
+			this.left.depthFirstTraversal(itteratorFunct, order);
+		}
 	}
-	if (order !== 'post-order') {
+	if (order === 'in-order' || order === 'rev-order') {
 		itteratorFunct(this.value);
 	}
-	if (this.right) {
-		this.right.depthFirstTraversal(itteratorFunct, order);
+	if (order === 'rev-order') {
+		if (this.left) {
+			this.left.depthFirstTraversal(itteratorFunct, order);
+		}
+	} else {
+		if (this.right) {
+			this.right.depthFirstTraversal(itteratorFunct, order);
+		}
 	}
 	if (order === 'post-order') {
 		itteratorFunct(this.value);
@@ -72,9 +84,9 @@ BST.prototype.brethFirstTraversal = function (itteratorFunct) {
 	}
 };
 
-BST.prototype.getMinVal = function (itteratorFunct) {
+BST.prototype.getMinVal = function () {
 	if (this.left) {
-		return this.left.getMinVal(itteratorFunct);
+		return this.left.getMinVal();
 	} else {
 		return this.value;
 	}
@@ -88,6 +100,8 @@ BST.prototype.getMaxVal = function () {
 	}
 };
 
+BST.prototype.myArr = [];
+
 var bst = new BST(50);
 bst.insert(30);
 bst.insert(70);
@@ -100,8 +114,8 @@ bst.insert(35);
 bst.insert(85);
 bst.insert(105);
 bst.insert(10);
-// console.log(bst.contains(105));
-// bst.depthFirstTraversal(log, 'in-order');
+console.log(bst.contains(105));
+bst.depthFirstTraversal(log, 'rev-order');
 
 // eslint-disable-next-line no-unused-vars
 function log(value) {
@@ -114,8 +128,8 @@ function log2(node) {
 
 bst.brethFirstTraversal(log2);
 bst.getMinVal();
-console.log('MIN: ' + bst.getMinVal());
-console.log('MAX: ' + bst.getMaxVal());
+console.log('MIN: ', bst.getMinVal());
+console.log('MAX: ', bst.getMaxVal());
 
 function factorial(num) {
 	if (num === 1) {
@@ -124,6 +138,6 @@ function factorial(num) {
 		return num * factorial(num - 1);
 	}
 }
-for (var i = 100; i > 0; i--) {
+for (var i = 170; i > 0; i--) {
 	console.log(i + ' => ' + factorial(i));
 }
