@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-function FizzBuzz(start, end, fizz, buzz) {
+function FizzBuzz(end, start, fizz, buzz) {
 	if (!start || isNaN(start)) start = 1;
 	if (!end || isNaN(end)) end = 20;
 	if (!fizz || isNaN(fizz)) fizz = 3;
@@ -22,4 +22,4 @@ function FizzBuzz(start, end, fizz, buzz) {
 	}
 }
 
-FizzBuzz(-20, 20, 3, 5);
+FizzBuzz(30);
