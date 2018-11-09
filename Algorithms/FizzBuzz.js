@@ -22,4 +22,4 @@ function FizzBuzz(end, start, fizz, buzz) {
 	}
 }
 
-FizzBuzz(30);
+FizzBuzz(20);
