@@ -3,7 +3,9 @@
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": [{
+    "configurations": [
+
+        {
             "type": "node",
             "request": "launch",
             "name": "HAshTable",
@@ -32,6 +34,12 @@
             "request": "launch",
             "name": "harlessRansomNote",
             "program": "${workspaceFolder}/Algorithms/HarmlessRansomNote.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "isPalinDrome",
+            "program": "${workspaceFolder}/Algorithms/isPalinDrome.js"
         }
     ]
 }
