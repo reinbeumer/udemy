@@ -26,6 +26,12 @@
             "request": "launch",
             "name": "FizzBuzz",
             "program": "${workspaceFolder}/Algorithms/FizzBuzz.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "harlessRansomNote",
+            "program": "${workspaceFolder}/Algorithms/HarmlessRansomNote.js"
         }
     ]
 }
