@@ -51,6 +51,11 @@
             "request": "launch",
             "name": "reverseWords",
             "program": "${workspaceFolder}/Algorithms/reverseWords.js"
+        }, {
+            "type": "node",
+            "request": "launch",
+            "name": "reverseArrayInPlace",
+            "program": "${workspaceFolder}/Algorithms/reverseArrayInPlace.js"
         }
     ]
 }
