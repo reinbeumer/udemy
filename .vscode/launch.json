@@ -45,6 +45,12 @@
             "request": "launch",
             "name": "caecarCipher",
             "program": "${workspaceFolder}/Algorithms/caecarCipher.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "reverseWords",
+            "program": "${workspaceFolder}/Algorithms/reverseWords.js"
         }
     ]
 }
