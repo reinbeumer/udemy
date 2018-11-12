@@ -7,7 +7,7 @@ function isPalindrome(string) {
 		if (valChar.indexOf(char) > -1) {
 			validStringArr.push(char);
 		}
-	})
+	});
 	if (validStringArr.join() === validStringArr.reverse().join()) {
 		return true;
 	} else {
@@ -15,4 +15,4 @@ function isPalindrome(string) {
 	}
 }
 
-console.log(isPalindrome('parteretrap'));
+console.log(isPalindrome("Madam I'm Adam"));

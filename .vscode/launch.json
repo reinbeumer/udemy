@@ -40,6 +40,11 @@
             "request": "launch",
             "name": "isPalinDrome",
             "program": "${workspaceFolder}/Algorithms/isPalinDrome.js"
+        }, {
+            "type": "node",
+            "request": "launch",
+            "name": "caecarCipher",
+            "program": "${workspaceFolder}/Algorithms/caecarCipher.js"
         }
     ]
 }
