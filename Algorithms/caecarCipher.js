@@ -1,27 +1,30 @@
 function caecarCipher(str, num) {
 	num = num % 26;
-	var alphabethArr = 'abcdefghijklmnopqrstuvwxyz'.split('');
+	var alphabeth = 'abcdefghijklmnopqrstuvwxyz';
+	var alphabethArrLower = alphabeth.toLowerCase().split('');
+	var alphabethArrUpper = alphabeth.toUpperCase().split('');
 	var retVal = '';
-	var lowCaseStr = str.toLowerCase().split('');
-	for (var i = 0; i < lowCaseStr.length; i++) {
-		var char = lowCaseStr[i];
-		if (alphabethArr.indexOf(char) > -1) {
-			var shift = i + num;
-			if (shift > 25) {
-				shift = shift - 26;
-			} else if (shift < 0) {
-				shift = shift + 26;
-			}
-			if (str[i] === char.toUpperCase()) {
-				retVal += alphabethArr[shift].toUpperCase();
-			} else {
-				retVal += alphabethArr[shift]
-			}
+	str.split('').forEach(char => {
+		if (alphabethArrLower.indexOf(char) > -1) {
+			retVal += shift(alphabethArrLower, num, char);
+		} else if (alphabethArrUpper.indexOf(char) > -1) {
+			retVal += shift(alphabethArrUpper, num, char);
 		} else {
 			retVal += char;
 		}
-	};
+	});
 	return retVal;
+
+	function shift(arr, num, char) {
+		var shift = arr.indexOf(char) + num;
+		if (shift > 25) {
+			shift = shift - 26;
+		} else if (shift < 0) {
+			shift = shift + 26;
+		}
+		return arr[shift];
+	}
 };
 
-console.log(caecarCipher("abcdefghijklmnopqrstuvwxyz", -1000));
+
+console.log(caecarCipher("Zoo Keeper", -885));
