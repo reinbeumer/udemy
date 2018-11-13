@@ -49,21 +49,23 @@ function getMode(arr) {
 	})
 	var keys = Object.keys(tmpObj);
 	var highVal = 0;
-	var highKey = 0;
+	var highKey = [];
 	var trueLength = 0;
 	keys.forEach(key => {
 		if (tmpObj[key] > highVal) {
-			highKey = key;
+			highKey = [key];
 			highVal = tmpObj[key];
 			trueLength++;
+		} else if (tmpObj[key] === highVal) {
+			highKey.push(key);
 		}
 	})
-	if (highVal > 1 && trueLength > 1) {
-		return highKey;
-	} else {
+	if (highKey.length === keys.length) {
 		return 'NA';
+	} else {
+		return highKey.toString();
 	}
 }
 
-console.log(meanMedianMode([3, '2', 23, 3]));
+console.log(meanMedianMode([9, 10, 23, 10, 23, 9]));
 console.log();
