@@ -67,5 +67,5 @@ function getMode(arr) {
 	}
 }
 
-console.log(meanMedianMode([9, 10, 23, 10, 23, 9]));
+console.log(meanMedianMode(['a', 'b', 'c', 'd', 'd']));
 console.log();
