@@ -32,8 +32,8 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "harlessRansomNote",
-            "program": "${workspaceFolder}/Algorithms/HarmlessRansomNote.js"
+            "name": "harmlessRansomNote",
+            "program": "${workspaceFolder}/Algorithms/harmlessRansomNote.js"
         },
         {
             "type": "node",
@@ -61,6 +61,27 @@
             "request": "launch",
             "name": "meanMedainMode",
             "program": "${workspaceFolder}/Algorithms/meanMedainMode.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "twoSum",
+            "program": "${workspaceFolder}/Algorithms/twoSum.js"
+        }, {
+            "type": "node",
+            "request": "launch",
+            "name": "test",
+            "program": "${workspaceFolder}/Algorithms/test.js"
+        }, {
+            "type": "node",
+            "request": "launch",
+            "name": "binarySearch",
+            "program": "${workspaceFolder}/Algorithms/binarySearch.js"
+        }, {
+            "type": "node",
+            "request": "launch",
+            "name": "fibonacci",
+            "program": "${workspaceFolder}/Algorithms/fibonacci.js"
         }
     ]
 }

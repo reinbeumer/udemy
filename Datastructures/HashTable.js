@@ -13,7 +13,6 @@ function HashNode(key, value, next) {
 HashTabel.prototype.hash = function (key) {
 	var total = 0;
 	for (var i = 0; i < key.length; i++) {
-		retval += key.charCodeAt(i);
 		total += key.charCodeAt(i);
 	}
 	var bucket = total % this.numBusckets;
@@ -67,7 +66,7 @@ HashTabel.prototype.retrieveAll = function () {
 	return retVal;
 };
 
-var myHT = new HashTabel(1);
+var myHT = new HashTabel(30);
 myHT.insert('Dean', 'deam@gmail.com');
 myHT.insert('Megan', 'megan@gmail.com');
 myHT.insert('Dane', 'dane@gmail.com');
@@ -78,8 +77,8 @@ myHT.insert('Dane', 'dane1010@outlook.com');
 myHT.insert('Joe', 'joey@facebook.com');
 myHT.insert('Samantha', 'sammy@twitter.com');
 
-console.log(myHT.hash('Magazijn'));
+console.log(myHT.retrieveAll());
 
 
 // console.log(myHT.buckets);
-console.log();
+console.log(382 % 30);
