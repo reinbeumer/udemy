@@ -3,16 +3,12 @@ function isPalindrome(string) {
 	var stringArr = string.split('');
 	var valChar = 'abcdefghijklmnopqrstuvwxyz'.split('');
 	var validStringArr = [];
-	stringArr.forEach(char => {
+	stringArr.forEach(function (char) {
 		if (valChar.indexOf(char) > -1) {
 			validStringArr.push(char);
 		}
 	});
-	if (validStringArr.join() === validStringArr.reverse().join()) {
-		return true;
-	} else {
-		return false;
-	}
+	return validStringArr.join() === validStringArr.reverse().join();
 }
 
-console.log(isPalindrome("Madam I'm Adam"));
+console.log(isPalindrome("meetsysteem"));

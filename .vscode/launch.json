@@ -82,6 +82,12 @@
             "request": "launch",
             "name": "fibonacci",
             "program": "${workspaceFolder}/Algorithms/fibonacci.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "testAnna",
+            "program": "${workspaceFolder}/Algorithms/testAnna.js"
         }
     ]
 }
