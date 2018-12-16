@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 function FizzBuzz(end, start, fizz, buzz) {
 	if (!start || isNaN(start)) start = 1;
 	if (!end || isNaN(end)) end = 20;

@@ -10,9 +10,9 @@ function fibonacci1(possition) {
 	var retVal = 1;
 	var prev = 0;
 	for (var i = 1; i < possition; i++) {
-		var tmp = retVal
+		var tmp = retVal;
 		retVal += prev;
-		prev = tmp
+		prev = tmp;
 	}
 	return retVal;
 }
@@ -30,8 +30,8 @@ function fibonacci2(index, cache) {
 	}
 	return cache[index];
 }
-//console.log(fibonacci(1476));
-var num = 5
+console.log(fibonacci(1476));
+var num = 5;
 console.log(fibonacci2(num));
-// console.log(fibonacci1(num));
-// console.log(fibonacci(num));
+console.log(fibonacci1(num));
+console.log(fibonacci(num));

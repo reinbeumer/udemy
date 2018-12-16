@@ -5,10 +5,12 @@ module.exports = {
     },
     "extends": "eslint:recommended",
     "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "impliedStrict": true,
         "ecmaFeatures": {
             "jsx": true
-        },
-        "sourceType": "module"
+        }
     },
     "rules": {
         "indent": [
@@ -29,6 +31,10 @@ module.exports = {
         ],
         "no-console": ["error", {
             allow: ["log"]
-        }]
+        }],
+        "strict": [
+            "error",
+            "global"
+        ]
     }
 };

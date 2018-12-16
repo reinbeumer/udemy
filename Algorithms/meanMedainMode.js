@@ -14,7 +14,7 @@ function getMean(arr) {
 			sum += num;
 			devider++;
 		}
-	})
+	});
 	if (devider === 0) {
 		return 'NA';
 	}
@@ -23,14 +23,14 @@ function getMean(arr) {
 
 function getMedian(arr) {
 	arr.sort(function (a, b) {
-		return a - b
+		return a - b;
 	});
 	var mid = arr.length / 2;
 	if (arr.length % 2 > 0) {
 		return arr[Math.floor(mid)];
 	} else {
 		var midLow = arr[mid];
-		var midHigh = arr[(mid - 1)]
+		var midHigh = arr[(mid - 1)];
 		if (typeof (midLow) !== 'number' || typeof (midHigh) !== 'number') {
 			return midHigh + '<>' + midLow;
 		}
@@ -42,24 +42,22 @@ function getMode(arr) {
 	var tmpObj = {};
 	arr.forEach(num => {
 		if (tmpObj.hasOwnProperty(num)) {
-			tmpObj[num]++
+			tmpObj[num]++;
 		} else {
 			tmpObj[num] = 1;
 		}
-	})
+	});
 	var keys = Object.keys(tmpObj);
 	var highVal = 0;
 	var highKey = [];
-	var trueLength = 0;
 	keys.forEach(key => {
 		if (tmpObj[key] > highVal) {
 			highKey = [key];
 			highVal = tmpObj[key];
-			trueLength++;
 		} else if (tmpObj[key] === highVal) {
 			highKey.push(key);
 		}
-	})
+	});
 	if (highKey.length === keys.length) {
 		return 'NA';
 	} else {
@@ -67,5 +65,5 @@ function getMode(arr) {
 	}
 }
 
-console.log(meanMedianMode([1, 2, 3, 5, 5, 6]));
+console.log(meanMedianMode([1, 2, 3, 8, 8, 8]));
 console.log();

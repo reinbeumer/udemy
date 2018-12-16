@@ -7,7 +7,7 @@ function reverseWords(string) {
 			revWrd += word[i];
 		}
 		revertStringArr.push(revWrd);
-	})
+	});
 	return revertStringArr.join(' ');
 }
 

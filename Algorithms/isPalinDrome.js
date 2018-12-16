@@ -1,5 +1,5 @@
 function isPalindrome(string) {
-	var string = string.toLowerCase();
+	string = string.toLowerCase();
 	var stringArr = string.split('');
 	var valChar = 'abcdefghijklmnopqrstuvwxyz'.split('');
 	var validStringArr = [];
@@ -11,4 +11,4 @@ function isPalindrome(string) {
 	return validStringArr.join() === validStringArr.reverse().join();
 }
 
-console.log(isPalindrome("meetsysteem"));
+console.log(isPalindrome('meetsysteem'));

@@ -3,7 +3,7 @@ function reverseWords(string) {
 
 	eachWord.forEach(function (word) {
 		console.log(word);
-	})
+	});
 
 	for (var i = 0; i < eachWord.length; i++) {
 		console.log(eachWord[i]);

@@ -6,4 +6,5 @@
     "prettier.useTabs": true,
     "prettier.tabWidth": 4,
     "prettier.singleQuote": true,
+    "npm-intellisense.importES6": true,
 }

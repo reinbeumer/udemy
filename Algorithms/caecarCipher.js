@@ -24,7 +24,7 @@ function caecarCipher(str, num) {
 		}
 		return arr[shift];
 	}
-};
+}
 
 
-console.log(caecarCipher("Anna Beumer", -25));
+console.log(caecarCipher('Anna Beumer', -25));
