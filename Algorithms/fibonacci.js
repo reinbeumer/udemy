@@ -30,8 +30,8 @@ function fibonacci2(index, cache) {
 	}
 	return cache[index];
 }
-console.log(fibonacci(1476));
-var num = 5;
+// console.log(fibonacci(1476));
+var num = 100;
 console.log(fibonacci2(num));
 console.log(fibonacci1(num));
-console.log(fibonacci(num));
+// console.log(fibonacci(num));

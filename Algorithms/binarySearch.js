@@ -13,5 +13,8 @@ function binarySearch(numArr, key) {
 		return false;
 	}
 }
+var num = 56;
+var arr = [5, 7, 12, 16, 36, 39, 42, 56, 71];
+// console.log(binarySearch(arr, num));
 
-console.log(binarySearch([5, 7, 12, 16, 36, 39, 42, 56, 71], 15));
+console.log(arr.indexOf(num) > -1);

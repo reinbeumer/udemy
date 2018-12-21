@@ -104,6 +104,11 @@
             "request": "launch",
             "name": "testAnna",
             "program": "${workspaceFolder}/Algorithms/testAnna.js"
+        }, {
+            "type": "node",
+            "request": "launch",
+            "name": "mergeSort",
+            "program": "${workspaceFolder}/Algorithms/mergeSort.js"
         }
     ]
 }
