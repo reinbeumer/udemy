@@ -1,8 +1,8 @@
-function fibonacci(possition) {
-	if (possition < 3) {
+function fibonacci(position) {
+	if (position < 3) {
 		return 1;
 	} else {
-		return fibonacci(possition - 1) + fibonacci(possition - 2);
+		return fibonacci(position - 1) + fibonacci(position - 2);
 	}
 }
 
@@ -31,7 +31,7 @@ function fibonacci2(index, cache) {
 	return cache[index];
 }
 // console.log(fibonacci(1476));
-var num = 100;
+var num = 50;
 console.log(fibonacci2(num));
 console.log(fibonacci1(num));
-// console.log(fibonacci(num));
+console.log(fibonacci(num));
