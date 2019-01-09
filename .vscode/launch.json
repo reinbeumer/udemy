@@ -109,6 +109,11 @@
             "request": "launch",
             "name": "mergeSort",
             "program": "${workspaceFolder}/Algorithms/mergeSort.js"
+        }, {
+            "type": "node",
+            "request": "launch",
+            "name": "maxStockProfit",
+            "program": "${workspaceFolder}/Algorithms/maxStockProfit.js"
         }
     ]
 }

@@ -1,8 +1,9 @@
-function fibonacci(position) {
+function fibonacci(position, caller) {
+	console.log(position + ' ' + caller);
 	if (position < 3) {
 		return 1;
 	} else {
-		return fibonacci(position - 1) + fibonacci(position - 2);
+		return fibonacci(position - 1, 'eerste') + fibonacci(position - 2, 'tweede');
 	}
 }
 
@@ -30,8 +31,8 @@ function fibonacci2(index, cache) {
 	}
 	return cache[index];
 }
-// console.log(fibonacci(1476));
-var num = 50;
-console.log(fibonacci2(num));
-console.log(fibonacci1(num));
+// console.log(fibonacci1(1476));
+var num = 9;
+// console.log(fibonacci2(num));
+// console.log(fibonacci1(num));
 console.log(fibonacci(num));
