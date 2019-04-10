@@ -54,7 +54,7 @@ function changeColor(color) {
 }
 
 function pickColor() {
-	var random = Math.floor(Math.random() * (colors.length - 1));
+	var random = Math.floor(Math.random() * colors.length);
 	return colors[random];
 }
 
@@ -78,7 +78,7 @@ function reRender() {
 	pickedColor = pickColor();
 	colorDisplay.textContent = pickedColor
 	for (var i = 0; i < squares.length; i++) {
-		if (i < colors.length - 1) {
+		if (i < colors.length) {
 			squares[i].style.background = colors[i];
 			squares[i].style.display = "initial";
 		} else {
