@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/reinbeumer/udemy/issues"
   },
-  "homepage": "https://github.com/reinbeumer/udemy#readme"
+  "homepage": "https://github.com/reinbeumer/udemy#readme",
+  "dependencies": {
+    "bootstrap": "^4.2.1"
+  }
 }

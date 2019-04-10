@@ -1,119 +1,136 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [{
-            "type": "node",
-            "request": "launch",
-            "name": "HAshTable",
-            "program": "${workspaceFolder}/Datastructures/HashTable.js"
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "BST",
-            "program": "${workspaceFolder}/Datastructures/BST.js"
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "LinkedList",
-            "program": "${workspaceFolder}/Datastructures/indexOfLinkedList.js"
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "FizzBuzz",
-            "program": "${workspaceFolder}/Algorithms/FizzBuzz.js"
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "harmlessRansomNote",
-            "program": "${workspaceFolder}/Algorithms/harmlessRansomNote.js"
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "isPalinDrome",
-            "program": "${workspaceFolder}/Algorithms/isPalinDrome.js"
-        }, {
-            "type": "node",
-            "request": "launch",
-            "name": "caecarCipher",
-            "program": "${workspaceFolder}/Algorithms/caecarCipher.js"
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "reverseWords",
-            "program": "${workspaceFolder}/Algorithms/reverseWords.js"
-        }, {
-            "type": "node",
-            "request": "launch",
-            "name": "reverseArrayInPlace",
-            "program": "${workspaceFolder}/Algorithms/reverseArrayInPlace.js"
-        }, {
-            "type": "node",
-            "request": "launch",
-            "name": "meanMedainMode",
-            "program": "${workspaceFolder}/Algorithms/meanMedainMode.js"
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "twoSum",
-            "program": "${workspaceFolder}/Algorithms/twoSum.js"
-        }, {
-            "type": "node",
-            "request": "launch",
-            "name": "test",
-            "program": "${workspaceFolder}/Algorithms/test.js"
-        }, {
-            "type": "node",
-            "request": "launch",
-            "name": "binarySearch",
-            "program": "${workspaceFolder}/Algorithms/binarySearch.js"
-        }, {
-            "type": "node",
-            "request": "launch",
-            "name": "fibonacci",
-            "program": "${workspaceFolder}/Algorithms/fibonacci.js"
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "fibMemo",
-            "program": "${workspaceFolder}/Algorithms/fibMemo.js"
-        }, {
-            "type": "node",
-            "request": "launch",
-            "name": "sieveOfEratosthenes",
-            "program": "${workspaceFolder}/Algorithms/sieveOfEratosthenes.js",
-            "args": ["bla"]
-        }, {
-            "type": "node",
-            "request": "launch",
-            "name": "bubbleSort",
-            "program": "${workspaceFolder}/Algorithms/bubbleSort.js",
-            "args": ["bla"]
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "testAnna",
-            "program": "${workspaceFolder}/Algorithms/testAnna.js"
-        }, {
-            "type": "node",
-            "request": "launch",
-            "name": "mergeSort",
-            "program": "${workspaceFolder}/Algorithms/mergeSort.js"
-        }, {
-            "type": "node",
-            "request": "launch",
-            "name": "maxStockProfit",
-            "program": "${workspaceFolder}/Algorithms/maxStockProfit.js"
-        }
-    ]
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [{
+			"type": "chrome",
+			"request": "launch",
+			"name": "Launch Chrome",
+			"url": "http://localhost:5500",
+			"file": "${workspaceFolder}/Web Developer Bootcamp/ScoreKeeper/ScoreKeeper.html"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "HAshTable",
+			"program": "${workspaceFolder}/Datastructures/HashTable.js"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "BST",
+			"program": "${workspaceFolder}/Datastructures/BST.js"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "LinkedList",
+			"program": "${workspaceFolder}/Datastructures/indexOfLinkedList.js"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "FizzBuzz",
+			"program": "${workspaceFolder}/Algorithms/FizzBuzz.js"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "harmlessRansomNote",
+			"program": "${workspaceFolder}/Algorithms/harmlessRansomNote.js"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "isPalinDrome",
+			"program": "${workspaceFolder}/Algorithms/isPalinDrome.js"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "caecarCipher",
+			"program": "${workspaceFolder}/Algorithms/caecarCipher.js"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "reverseWords",
+			"program": "${workspaceFolder}/Algorithms/reverseWords.js"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "reverseArrayInPlace",
+			"program": "${workspaceFolder}/Algorithms/reverseArrayInPlace.js"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "meanMedainMode",
+			"program": "${workspaceFolder}/Algorithms/meanMedainMode.js"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "twoSum",
+			"program": "${workspaceFolder}/Algorithms/twoSum.js"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "test",
+			"program": "${workspaceFolder}/Algorithms/test.js"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "binarySearch",
+			"program": "${workspaceFolder}/Algorithms/binarySearch.js"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "fibonacci",
+			"program": "${workspaceFolder}/Algorithms/fibonacci.js"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "fibMemo",
+			"program": "${workspaceFolder}/Algorithms/fibMemo.js"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "sieveOfEratosthenes",
+			"program": "${workspaceFolder}/Algorithms/sieveOfEratosthenes.js",
+			"args": ["bla"]
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "bubbleSort",
+			"program": "${workspaceFolder}/Algorithms/bubbleSort.js",
+			"args": ["bla"]
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "testAnna",
+			"program": "${workspaceFolder}/Algorithms/testAnna.js"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "mergeSort",
+			"program": "${workspaceFolder}/Algorithms/mergeSort.js"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "maxStockProfit",
+			"program": "${workspaceFolder}/Algorithms/maxStockProfit.js"
+		}
+	]
 }

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>registrationform </title>
+	</head>
+
+	<body>
+		<h1>Register</h1>
+		<form action="">
+			<div>
+				<label for="name">First Name:</label>
+				<input required type="text" id="name" placeholder="John">
+				<label for="lastname">Last Name:</label>
+				<input required type="text" id="lastname" placeholder="Smith">
+			</div>
+			<div>
+				<label for="male">Male</label>
+				<input type="radio" name="gender" id="male" value="male">
+				<label for="female">Female</label>
+				<input type="radio" name="gender" id="female" value="female">
+				<label for="other">Other</label>
+				<input type="radio" name="gender" id="other" value="other">
+			</div>
+			<div>
+				<label for="email">Email:</label>
+				<input required type="email" name="email" id="email" placeholder="your email">
+				<label for="password">Password:</label>
+				<input required type="password" name="password" id="password" minlength="4" placeholder="your password">
+			</div>
+			<div>
+				<label for="month">Birthday:</label>
+				<select name="month" id="month">
+					<option value="0" selected disabled>Month</option>
+					<option value="jan">jan</option>
+					<option value="feb">feb</option>
+					<option value="mar">mar</option>
+				</select>
+
+				<select name="day" id="day">
+					<option value="0" selected disabled>Day</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+				<select name="year" id="year">
+					<option value="0" selected disabled>Year</option>
+					<option value="1968">1968</option>
+					<option value="1969">1969</option>
+					<option value="1970">1970</option>
+				</select>
+
+			</div>
+			<div>
+				<label for="toc">I agree to the terms and conditions</label>
+				<input type="checkbox" name="toc" id="toc" required value="reinier">
+			</div>
+			<button>Submit</button>
+		</form>
+	</body>
+
+</html>

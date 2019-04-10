@@ -1,23 +1,23 @@
 function sieveOfEratosthenes(num) {
 	var primeArr = [];
 	for (var i = 0; i <= num; i++) {
-		primeArr[i] = 1;
+		primeArr[i] = true;
 	}
 
-	primeArr[0] = 0;
-	primeArr[1] = 0;
+	primeArr[0] = false;
+	primeArr[1] = false;
 	var maxLoopNum = Math.sqrt(num);
 	var retvalArr = [];
-	for (var i = 2; i <= maxLoopNum; i++) {
+	for (let i = 2; i <= maxLoopNum; i++) {
 		var index = i + i;
 		while (index <= num) {
-			primeArr[index] = 0;
+			primeArr[index] = false;
 			index += i;
 		}
 	}
-	for (var j = 0; j < primeArr.length; j++) {
-		if (primeArr[j]) {
-			retvalArr.push(j);
+	for (let i = 0; j < primeArr.length; i++) {
+		if (primeArr[i]) {
+			retvalArr.push(i);
 		}
 
 	}
@@ -64,16 +64,16 @@ function sieveOfEratosthenes3(num) {
 
 	return num - Object.keys(captured).length;
 }
-var number = 100000000;
+var number = 2;
 var start1 = Date.now();
 console.log(sieveOfEratosthenes(number));
 var millis1 = Date.now() - start1;
-console.log(millis1 / 1000);
-var start2 = Date.now();
-console.log(sieveOfEratosthenes2(number));
-var millis2 = Date.now() - start2;
-console.log(millis2 / 1000);
-var start3 = Date.now();
+console.log(millis1);
+// var start2 = Date.now();
+// console.log(sieveOfEratosthenes2(number));
+// var millis2 = Date.now() - start2;
+// console.log(millis2 / 1000);
+// var start3 = Date.now();
 // console.log(sieveOfEratosthenes3(number));
-var millis3 = Date.now() - start3;
-console.log(millis3 / 1000);
+// var millis3 = Date.now() - start3;
+// console.log(millis3 / 1000);

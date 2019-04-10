@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=5.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="shortcut icon" type="image/png" href="images/huigLogo.png">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
+		<style>
+			p{
+				font-family: raleway;
+				font-weight: 800;
+				margin: 5px;
+			}
+			#title{
+				font-size: 26px;
+			}
+			#ordernummer{
+				font-size: 38px;
+				text-transform: uppercase;
+			}
+			form{
+				margin: 5px;
+				border-bottom: 2px solid red;
+				width: 300px;
+				padding-bottom: 20px;
+			}
+			</style>
+		<title>Xgram E-Order Opvraag</title>
+	</head>
+
+	<body>
+		<p id="title">Xgram E-Order Opvraag</p>
+		<p id="ordernummer">ordernummer</p>
+		<form action="http://192.168.22.230:8999/wprg/dig_ordzak.pvx" method="post" target="_blank">
+			<input type="hidden" name="doc" value="start.html" />
+			<input type="text" name="ord" placeholder="ordernummer" required autofocus />
+			<input type="submit" />
+		</form>
+	</body>
+
+</html>

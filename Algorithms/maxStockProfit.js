@@ -8,10 +8,12 @@ function maxStockProfit(arr) {
 	for (let i = 2; i < arr.length - 1; i++) {
 		let firstPrice = arr[i];
 		let nextPrice = arr[i + 1];
+		let diff = firstPrice - nextPrice;
 		if (firstPrice < buyPrice) {
 			buyPrice = firstPrice;
-			sellPrice = nextPrice;
-		} else if (nextPrice > sellPrice) {
+			// sellPrice = nextPrice;
+		}
+		if (nextPrice > sellPrice) {
 			sellPrice = nextPrice;
 		}
 	}
@@ -28,4 +30,4 @@ function maxStockProfit(arr) {
 		result
 	);
 }
-console.log(maxStockProfit([10, 18, 11, 8]));
+console.log(maxStockProfit([20, 15, 38, 14, 20]));
