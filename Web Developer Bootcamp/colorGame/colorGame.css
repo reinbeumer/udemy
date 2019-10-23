@@ -2,23 +2,20 @@ body {
 	background-color: #232323;
 	margin: 0;
 	font-family: "Montserrat", "Avenir";
+	color: steelblue;
 }
 
 #numInput {
 	border: none;
 	background: none;
-	text-transform: uppercase;
-	height: 90%;
+	height: 100%;
 	font-weight: 700;
-	color: steelblue;
+	color: inherit;
 	font-size: inherit;
-	letter-spacing: 1px;
-	transition: all 0.3s;
 }
 
 .square {
 	width: 30%;
-	background: purple;
 	padding-bottom: 30%;
 	float: left;
 	margin: 1.66%;
@@ -38,7 +35,7 @@ h1 {
 	background: steelblue;
 	margin: 0;
 	font-weight: normal;
-	font-size: 2rem;
+	font-size: 1.8rem;
 	text-transform: uppercase;
 	line-height: 1.1;
 	padding: 20px 0;
@@ -57,7 +54,7 @@ h1 {
 }
 
 #colorDisplay {
-	font-size: 2.5rem;
+	font-size: 2.3rem;
 }
 
 #message {
@@ -71,7 +68,7 @@ button {
 	text-transform: uppercase;
 	height: 100%;
 	font-weight: 700;
-	color: steelblue;
+	color: inherit;
 	font-size: inherit;
 	letter-spacing: 1px;
 	transition: all 0.3s;
@@ -81,7 +78,7 @@ button {
 	outline: none;
 }
 
-button:hover {
+button.hoverable:hover {
 	color: white;
 	background: steelblue;
 }
