@@ -1,0 +1,8 @@
+{
+	"appService.zipIgnorePattern": [
+		"node_modules{,/**}",
+		".vscode{,/**}"
+	],
+	"appService.defaultWebAppToDeploy": "/subscriptions/be644f0b-4f1f-47aa-821a-21aad7d7945b/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/movieSearchAppRein",
+	"appService.deploySubpath": ""
+}
