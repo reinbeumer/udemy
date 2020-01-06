@@ -4,6 +4,28 @@
 	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
 	"version": "0.2.0",
 	"configurations": [
+
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "nodemon YelpCamp",
+			"runtimeExecutable": "nodemon",
+			"cwd": "${workspaceFolder}/webdevelopbootcamp/YelpCamp/",
+			"program": "${workspaceFolder}/webdevelopbootcamp/YelpCamp/app.js",
+			"restart": true,
+			"console": "integratedTerminal",
+			"internalConsoleOptions": "openOnFirstSessionStart",
+			"skipFiles": [
+				"<node_internals>/**"
+			]
+		},
+		{
+			"type": "chrome",
+			"request": "launch",
+			"name": "Launch YelpCamp",
+			"url": "http://localhost:8888",
+			"webRoot": "${workspaceFolder}/webdevelopbootcamp/YelpCamp/"
+		},
 		{
 			"type": "chrome",
 			"request": "launch",
@@ -146,6 +168,12 @@
 			"request": "launch",
 			"name": "maxStockProfit",
 			"program": "${workspaceFolder}/Algorithms/maxStockProfit.js"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "codegenerator",
+			"program": "${workspaceFolder}/chess/codegenerator.js"
 		}
 	]
 }
