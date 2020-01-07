@@ -3,12 +3,22 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+// const MongoClient = require('mongodb').MongoClient;
 const favicon = require('serve-favicon');
 
 app.use(express.static('public'));
 app.use(favicon(__dirname + '/public/favicon.ico'));
 
-mongoose.connect('mongodb://localhost:27017/yelp_camp', {
+
+// const uri = "mongodb+srv://yelpcamp:vTkkOBObezgj7laS@cluster0-fcbmk.azure.mongodb.net/test?retryWrites=true&w=majority";
+// const client = new MongoClient(uri, { useNewUrlParser: true });
+// client.connect(err => {
+//   const collection = client.db("test").collection("devices");
+//   // perform actions on the collection object
+//   client.close();
+// });
+
+mongoose.connect('mongodb+srv://yelpcamp:vTkkOBObezgj7laS@cluster0-fcbmk.azure.mongodb.net/test?retryWrites=true&w=majority', {
 	useNewUrlParser: true,
 	useUnifiedTopology: true
 });
@@ -69,8 +79,8 @@ app.get('/campgrounds/:id', (req, res) => {
 		}
 	});
 });
-app.listen(process.env.PORT, process.env.IP, () => {
+app.listen(() => {
 	console.log(
-		`Yelpcamp server has started at http://${process.env.IP}:${process.env.PORT}`
+		`Yelpcamp server has started`
 	);
 });

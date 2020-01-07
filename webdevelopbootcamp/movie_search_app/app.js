@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 	res.render('search');
 });
 
-app.listen(process.env.PORT, process.env.IP, () => {
+app.listen(process.env.PORT, () => {
 	console.log(
 		`Movie app has started at http://${process.env.IP}:${process.env.PORT}`
 	);
