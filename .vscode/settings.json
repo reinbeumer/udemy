@@ -11,6 +11,6 @@
 		"node_modules{,/**}",
 		".vscode{,/**}"
 	],
-	"appService.defaultWebAppToDeploy": "/subscriptions/be644f0b-4f1f-47aa-821a-21aad7d7945b/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/YelpCampRein",
-	"appService.deploySubpath": "webdevelopbootcamp/YelpCamp"
+	"appService.deploySubpath": "webdevelopbootcamp/YelpCamp",
+	"appService.defaultWebAppToDeploy": "/subscriptions/be644f0b-4f1f-47aa-821a-21aad7d7945b/resourceGroups/cloud-shell-storage-westeurope/providers/Microsoft.Web/sites/YelpCampRein"
 }

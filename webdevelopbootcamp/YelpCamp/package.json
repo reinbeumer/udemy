@@ -15,7 +15,7 @@
     "yelpcamp"
   ],
   "author": "rein",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
