@@ -18,7 +18,7 @@ app.use(favicon(__dirname + '/public/favicon.ico'));
 //   client.close();
 // });
 
-mongoose.connect('mongodb+srv://yelpcamp:vTkkOBObezgj7laS@cluster0-fcbmk.azure.mongodb.net/test?retryWrites=true&w=majority', {
+mongoose.connect('mongodb://yelp-camp:CKzSF31TmJzKbt0iDsATDphYjvU1Vyw7IIQ5PfwLQfGombLU7ZJhEx3OOSFS45vcvEkU2SVrEqxeykXFBWbpLg%3D%3D@yelp-camp.documents.azure.com:10255/?ssl=true', {
 	useNewUrlParser: true,
 	useUnifiedTopology: true
 });
@@ -79,7 +79,7 @@ app.get('/campgrounds/:id', (req, res) => {
 		}
 	});
 });
-app.listen( () => {
+app.listen(process.env.PORT,() => {
 	console.log(
 		`Yelpcamp server has started`
 	);
