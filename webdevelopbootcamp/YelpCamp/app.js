@@ -3,22 +3,13 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-// const MongoClient = require('mongodb').MongoClient;
 const favicon = require('serve-favicon');
 
 app.use(express.static('public'));
 app.use(favicon(__dirname + '/public/favicon.ico'));
 
-
-// const uri = "mongodb+srv://yelpcamp:vTkkOBObezgj7laS@cluster0-fcbmk.azure.mongodb.net/test?retryWrites=true&w=majority";
-// const client = new MongoClient(uri, { useNewUrlParser: true });
-// client.connect(err => {
-//   const collection = client.db("test").collection("devices");
-//   // perform actions on the collection object
-//   client.close();
-// });
-
-mongoose.connect('mongodb://yelp-camp:CKzSF31TmJzKbt0iDsATDphYjvU1Vyw7IIQ5PfwLQfGombLU7ZJhEx3OOSFS45vcvEkU2SVrEqxeykXFBWbpLg%3D%3D@yelp-camp.documents.azure.com:10255/?ssl=true', {
+// mongoose.connect('mongodb://yelp-camp:CKzSF31TmJzKbt0iDsATDphYjvU1Vyw7IIQ5PfwLQfGombLU7ZJhEx3OOSFS45vcvEkU2SVrEqxeykXFBWbpLg%3D%3D@yelp-camp.documents.azure.com:10255/?ssl=true', {
+mongoose.connect('mongodb+srv://yelpcamp:vTkkOBObezgj7laS@cluster0-fcbmk.azure.mongodb.net/test?retryWrites=true&w=majority', {
 	useNewUrlParser: true,
 	useUnifiedTopology: true
 });
