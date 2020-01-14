@@ -15,7 +15,7 @@ function sieveOfEratosthenes(num) {
 			index += i;
 		}
 	}
-	for (let i = 0; j < primeArr.length; i++) {
+	for (let i = 0; i < primeArr.length; i++) {
 		if (primeArr[i]) {
 			retvalArr.push(i);
 		}
@@ -64,16 +64,16 @@ function sieveOfEratosthenes3(num) {
 
 	return num - Object.keys(captured).length;
 }
-var number = 2;
+var number = 10000000;
 var start1 = Date.now();
 console.log(sieveOfEratosthenes(number));
 var millis1 = Date.now() - start1;
-console.log(millis1);
-// var start2 = Date.now();
-// console.log(sieveOfEratosthenes2(number));
-// var millis2 = Date.now() - start2;
-// console.log(millis2 / 1000);
-// var start3 = Date.now();
-// console.log(sieveOfEratosthenes3(number));
-// var millis3 = Date.now() - start3;
-// console.log(millis3 / 1000);
+console.log(millis1/1000);
+var start2 = Date.now();
+console.log(sieveOfEratosthenes2(number));
+var millis2 = Date.now() - start2;
+console.log(millis2/1000);
+var start3 = Date.now();
+console.log(sieveOfEratosthenes3(number));
+var millis3 = Date.now() - start3;
+console.log(millis3/1000);
